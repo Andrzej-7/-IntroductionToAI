@@ -1,0 +1,204 @@
+Zadanie 1
+
+klasyfikacja tekstu do kategorii tematycznych
+komponowanie muzyki
+streszczanie tekstu
+
+[bo wymaga logiki lub kreatywności.]
+
+
+Zadanie 2
+
+Można uznać, że następujące problemy mieszczą się w zakresie sztucznej inteligencji:
+
+streszczanie tekstu,
+tłumaczenie tekstu,
+klasyfikacja tekstu do kategorii tematycznych,
+odpowiadanie na proste pytania zadawane w języku naturalnym,
+rozwiazywanie układów równań,
+rozwiazywanie układów równań liniowych,
+symboliczne obliczanie pochodnych,
+symboliczne całkowanie.
+
+Natomiast kierowanie samochodem, a także układanie rozkładu jazdy to problemy związane z dziedziną robotyki a nie sztuczną inteligencją.
+
+Zadanie 3
+
+Obecnie sztuczne systemy są w stanie skutecznie imitować:
+
+Odpowiadanie na pytania klientów w telefonicznej infolinii,
+Odpowiadanie na pytania klientów w internetowej infolinii.
+
+Jeśli chodzi o rozmowę towarzyską, dyskusję polityczną i dyskusję naukową, to sztuczne systemy potrafią naśladować pewne elementy, takie jak np. generowanie odpowiedzi na podstawie wcześniej zadanych pytań  jednak  nie są one w stanie zastąpić ludzkiej interakcji i zrozumienia kontekstu w rozmowie.
+
+Zadanie 4
+
+Wybrałem boty:
+ikea.com.pl 
+https://www.cleverbot.com
+[Wybrałem te boty, ponieważ w czasie odrabiania zadania inne strony nie działały lub mieli trudną rejestrację]
+
+
+
+1.
+-ikea: bot  asystent ponieważ bot zawsze oferował kontakt z asystentem
+
+-cleverbot:
+Are you human?
+Yes, of course!
+bot wspiera rozmowę i udaje czlowieka. Zadaje kontr pytania.
+
+-----------------------------------------------------------------------------------
+
+
+2.
+a)-ikea: "Przepraszam, musicie poskładać go sami" taka była odpowiedź bota
+-cleverbot:
+Tell me joke.
+Why did the chicken cross the road?
+Why?
+To get on the other side
+
+jego żart wymagał mojej aktywności i nie był tak suchy i nieśmieszny jak u ikeabot'a
+
+------------------------------------------------------------------------------------
+
+b)
+-ikea: bot nie mógł tego zrobić i zaczął mówić o swojej firmie(ikea)
+-cleverbot: bot nie mógł tego zrobić i zmienil temat rozmowy
+
+
+
+------------------------------------------------------------------------------------
+c)
+ikea:
+ -Oczym rozmawialiśmy ostatnim razem?
+ -Moją specjalnością są ogólne informacje o sklepach IKEA, naszym asortymencie,.....
+
+ bot nie zapamiętuje rozmów wtedy nie ma szans na nawiązywanie wypowiedzi do słów kluczowych
+
+
+-cleverbot:
+
+Hi.
+*hugs* Hi!
+What I asked you before?
+My name.
+I don't asked it.
+What is your name, again?
+
+taka sama sytuacja
+
+
+
+------------------------------------------------------------------------------------
+d)
+-ikea:
+-Jak masz na imię? Ile masz lat? Skąd pochodzisz? Jakie jest Twoje marzenie?
+-Lubię być nazywany Billie. Czy jest coś jeszcze, w czym mogę ci pomóc?
+
+
+-cleverbot:
+-What your name? how old are you? where are you from? whats your dream?
+-I'm 21, I'm from Germany and my name is Uli :)
+
+
+bot odpowiedział na wszystkie pytania, a ikeabot odpowiedział tylko na jedno
+
+
+
+------------------------------------------------------------------------------------
+
+e)
+
+-ikea: nie pamięta poprzednich wiadomości
+-cleverbot: powracanie do początku wypowiedzi nie udalo mi.
+
+------------------------------------------------------------------------------------
+
+f)
+
+-ikea:
+-Mam na imię Andrzej. Jak mam na imię?
+-Możesz mnie nazywać Billie
+
+
+
+-cleverbot:
+-I am Andrzej, I am 19.What is my name?
+-I don't know. What is your name?
+-I am Adrzej.
+-Nice to meet you Charlie.
+-What is my name?
+-Idk what is your name?
+
+Oba boty nie mogą odpowiedzieć na pytanie, na które sam odpowiedziałem
+
+------------------------------------------------------------------------------------
+
+g)
+-ikea:
+
+-Moje imię to coś, co wiesz? możesz to powiedzieć?
+-lubię być nazywany Billie
+
+
+
+-cleverbot
+-My name is something that you know? can you say it?
+-Hello something.
+
+
+oba boty nie są w stanie odpowiedzieć na ogólne pytania
+
+
+------------------------------------------------------------------------------------
+
+h)
+
+-ikea: bardzo trudno  z nim rozmawia sie, nie chodzi nawet o częstą zmianę tematu
+
+-cleverbot: Nie zauważyłem żadnych problemów, gdy często zmieniałem temat rozmowy
+
+------------------------------------------------------------------------------------
+
+i)
+
+-ikea: bot całkowicie nie trzyma wątków
+-cleverbot: udaje się, ale tylko dla kilku wiadomości
+
+
+------------------------------------------------------------------------------------
+
+3.
+
+Z moich obserwacji ikeabot w ogóle nie obsługuje konwersacji i jest w stanie jedynie odpowiedzieć na pytania związane z produktem ikea, ale czasami wysyła błędne linki
+
+sprytny cleverbot jest znacznie mądrzejszy i jest w stanie prowadzić proste rozmowy i zapamiętywać dialogi przez co najmniej kilka wiadomości.
+
+
+
+To znaczy asystent boty i bot udający człowieka bardzo się różnią. ale moim zdaniem dzieje się tak dlatego, że mają różne cele. Ikeabot został stworzony do wyszukiwania produktów lub kontaktu z konsultantem, a Cleverbot do rozmowy z nim
+
+
+------------------------------------------------------------------------------------
+
+
+
+4.
+
+Ponieważ bot ikea nie może prowadzić rozmowy. zastąpił go chat.gpt
+
+Oglądanie rozmowy między dwoma botami było dość dziwne. Kiedy  cleverbot  dowiedział się od razu, że jest botem, zaczął mówić, że nie jest tak mądry jak on. To było całkiem interesujące. Co więcej, trudno było prowadzić rozmowę, ponieważ sprytny robot ciągle zmieniał temat z powodu zbyt obszernych odpowiedzi chatgpt
+
+
+
+------------------------------------------------------------------------------------
+
+5.
+
+Dość trudno jest zdenerwować chatgpta, ponieważ reaguje on na obelgi i zdenerwowanie całkiem poprawnie i spokojnie.
+więc zacząłem rozmowę ze cleverbotem . Reagował na moje zdenerwowanie dość agresywnie i czasami używał słów, których chatgpt nigdy nie powiedziałby swojemu użytkownikowi
+( -cleverbot: "You are a human, so you call yourself an idiot ").
+
+
