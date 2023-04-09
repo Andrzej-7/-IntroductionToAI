@@ -1,0 +1,160 @@
+% Predykat osoba
+osoba(jan).
+osoba(kasia).
+osoba(adam).
+osoba(ewa).
+osoba(marek).
+osoba(zofia).
+osoba(piotr).
+osoba(henryk).
+osoba(anna).
+osoba(magda).
+osoba(krzysztof).
+osoba(weronika).
+osoba(tomek).
+osoba(lukasz). 
+osoba(karolina).
+osoba(natalia).
+
+% Predykat mezczyzna
+mezczyzna(jan).
+mezczyzna(adam).
+mezczyzna(marek).
+mezczyzna(piotr).
+mezczyzna(henryk).
+mezczyzna(krzysztof).
+mezczyzna(tomek).
+mezczyzna(lukasz).
+
+
+
+% Predykat rodzic
+rodzic(jan, kasia).
+rodzic(kasia, ewa).
+rodzic(adam, marek).
+rodzic(ewa, marek).
+rodzic(zofia, piotr).
+rodzic(henryk, piotr).
+
+
+rodzic(zofia, karolina).
+
+
+
+rodzic(magda, karolina).
+rodzic(marek, karolina).
+rodzic(magda, jan).
+rodzic(marek, jan).
+
+
+rodzic(magda, karolina).
+rodzic(marek, karolina).
+rodzic(magda, jan).
+rodzic(henryk, jan).
+
+
+
+
+
+
+
+rodzic(piotr, natalia).
+rodzic(anna, natalia).
+rodzic(tomek, lukasz).
+rodzic(karolina, lukasz).
+rodzic(weronika, krzysztof).
+rodzic(krzysztof, lukasz).
+
+
+
+
+
+
+% Reguła kobieta
+kobieta(X) :- 
+    osoba(X), not(mezczyzna(X)).
+
+% Reguła ojciec
+ojciec(X, Y) :- 
+    rodzic(X, Y), mezczyzna(X).
+
+% Reguła matka
+matka(X, Y) :- 
+    rodzic(X, Y), kobieta(X).
+
+% Reguła córka (  corka(X, karolina).   )
+corka(X, Y) :-
+    matka(X, Y),
+    kobieta(X).
+
+
+% Reguła brat_rodzony  (   brat_rodzony(X, karolina).   )
+brat_rodzony(X, Y) :- 
+    matka(Z, X), 
+    matka(Z, Y), 
+    ojciec(W, X),
+    ojciec(W, Y), 
+    mezczyzna(X),
+    X \= Y.
+
+
+% Reguła brat_przyrodni (  brat_przyrodni(X, karolina).  )
+brat_przyrodni(X, Y) :-
+    matka(M, X),
+    matka(M, Y),
+    ojciec(A, X),
+    ojciec(B, Y),
+    mezczyzna(X),
+    X \= Y,
+    A \= B,
+    A \= M,
+    B \= M.
+
+
+% Reguła kuzyn
+kuzyn(X, Y) :- matka(Z, X), matka(W, Y), brat_rodzony(Z, W).
+kuzyn(X, Y) :- ojciec(Z, X), ojciec(W, Y), brat_rodzony(Z, W).
+
+
+% Reguła dziadek_od_strony_ojca
+dziadek_od_strony_ojca(X, Y) :-
+    ojciec(X, Z),
+    ojciec(Z, Y).
+
+
+% Reguła dziadek_od_strony_matki
+dziadek_od_strony_matki(X, Y) :-
+    matka(X, Z),
+    ojciec(W, Z),
+    rodzic(W, Y).
+
+
+% Reguła dziadek
+dziadek(X, Y) :- 
+    dziadek_od_strony_ojca(X, Y); dziadek_od_strony_matki(X, Y).
+
+% Reguła babcia
+babcia(X, Y) :-
+    ojciec(Z,Y),
+    matka(K,Z),
+    rodzic(X,K);
+    matka(Z, Y),
+    matka(X, Z).
+    
+
+% Reguła wnuczka (  wnuczka(X,adam).  )
+wnuczka(X, Y) :-
+    (babcia(Y, Z); dziadek(Y, Z)),
+    rodzic(Z, X),
+    kobieta(X).
+
+
+% Reguła przodek_do2pokolenia_wstecz
+przodek_do2pokolenia_wstecz(X, Y) :-
+    (dziadek(X, Z); babcia(X, Z)),
+    rodzic(Z, Y).
+
+% Reguła przodek_do3pokolenia_wstecz
+przodek_do3pokolenia_wstecz(X, Y) :-
+    przodek_do2pokolenia_wstecz(X, Z),
+    rodzic(Z, Y).

@@ -1,0 +1,99 @@
+%Andrii Ziatkevych
+
+parent(peter, mark).
+
+parent(peter, connor).
+
+parent(mike, christopher).
+
+parent(mike, zachary).
+
+parent(kate, christopher).
+
+parent(kate, zachary).
+
+parent(mark, matthew).
+
+parent(mark, daniel).
+
+parent(jacob, daniel).
+
+parent(jacob, connor).
+
+parent(christopher, patrick).
+
+parent(zachary, nathan).
+
+parent(daniel, nathan).
+
+parent(andrzej, nathan).
+
+
+%A
+rodzeństwo(X, Y) :- 
+   parent(Z, X), parent(Z, Y), X \= Y.
+
+%B
+kuzyn(X, Y) :- 
+    parent(Z, X), parent(W, Y), rodzeństwo(Z, W), X \= Y.
+
+
+
+%C  
+%X jest teściową Y, jeśli istnieje osoba Z, która jest rodzicem Y i osoba W, 
+%która jest rodzicem X, a Z jest również rodzicem W.
+%Dodatkowo, X nie jest rodzic Z i Y nie jest rodzicem W, a X nie jest równy
+coParentInLaw(X, Y) :-
+   (parent(Z, Y), parent(W, X), parent(Z, W)),
+   \+ parent(X, Z),
+   \+ parent(Y, W),
+   X \= Y.
+
+%D
+macocha(X, Y) :-
+    parent(Z, Y),
+    parent(Z, X),
+    parent(X, W),
+    X \= W,
+    \+ parent(W, Y).
+
+
+%E
+
+% X i Y są półrodzeństwo jeśli istnieje osoba Z, która jest rodzicem zarówno X,
+% jak i Y, oraz istnieją dwie różne osoby W i V,
+% które są odpowiednio rodzicami X i Y, i żadna z nich nie jest taka sama jak Z.
+półrodzeństwo(X, Y) :-
+    parent(Z, X),
+    parent(Z, Y),
+    parent(W, X),
+    parent(V, Y),
+    W \= V,
+    Z \= W,
+    Z \= V.
+
+%F
+szwagier(X,Y) :-
+	parent(Z,X),
+	parent(Z,W),
+	parent(W,V),
+	parent(Y,V),
+	X \= Y,
+	X \= W,
+	Y \= W.
+
+%G
+wuj(X,Y) :-
+	parent(X,Z),
+	parent(Z,W),
+	parent(Y,W),
+	X \= Y,
+	Y \= Z.
+
+
+
+
+
+
+
+
